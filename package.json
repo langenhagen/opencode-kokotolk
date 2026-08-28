@@ -1,0 +1,25 @@
+{
+  "name": "opencode-kokotolk",
+  "version": "0.1.0",
+  "description": "OpenCode TUI plugin: speak the last assistant message via kokoro TTS",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "./tui": {
+      "types": "./plugins/talk.ts",
+      "import": "./plugins/talk.ts"
+    }
+  },
+  "engines": {
+    "opencode": ">=1.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.15.12",
+    "@opencode-ai/sdk": "^1.15.12",
+    "@types/node": "^24.13.3",
+    "typescript": "^5.9.2"
+  }
+}
